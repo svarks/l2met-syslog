@@ -1,6 +1,7 @@
 # L2met::Syslog
 
-TODO: Write a gem description
+This gem allows to write system info in log using l2met compatible format.
+Runs in a thread.
 
 ## Installation
 
@@ -18,7 +19,15 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+    class MyLogger < L2met::Syslogger
+      def log_data
+        log(source: ENV['APP_NAME'], measure: 'cpu', val: 10)
+        log(source: ENV['APP_NAME'], measure: 'memory', val: 100)
+      end
+    end
+
+    # this will start logging data in a new thread
+    MyLogger.run
 
 ## Contributing
 
