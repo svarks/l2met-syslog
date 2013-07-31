@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = L2met::Syslog::VERSION
   spec.authors       = ["Sergey Varaksin"]
   spec.email         = ["varaksin86@gmail.com"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
+  spec.description   = %q{l2m compatible logger}
+  spec.summary       = %q{allows to log system monitoring information asyncronously}
   spec.homepage      = ""
   spec.license       = "MIT"
 
